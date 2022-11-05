@@ -12,10 +12,6 @@ body {
   font-size: 18px;
 }
 
-.img-fluid{
-background-image: url("../images/messenger-animate.svg");
-background-repeat: no-repeat;
-}
 
 
 legend {
