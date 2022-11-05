@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Noto Sans", Courier, monospace;
+  font-size: 18px;
+}
+
+
+legend {
+  position: relative;
+  font-size: 2rem;
+  font-family: "Noto Sans", Courier, monospace;
+  color: #fdf8e6;
+  text-transform: uppercase;
+}
+
+legend::before {
+  content: "Sistema de Recados";
+  position: absolute;
+  color: #f4c21b;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #f4c21b;
+  animation: slide 6s linear infinite;
+  -webkit-animation: slide 5s linear infinite;
+  overflow: hidden;
+}
+
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+
+h3 {
+  position: relative;
+  font-size: 2rem;
+  font-family: "Noto Sans", Courier, monospace;
+  color: #f4c21b;
+  text-transform: uppercase;
+
+}
+
+
+
+h3::before {
+  content: "Criar Conta";
+  position: absolute;
+  color: #fdf8e6;
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #f4c21b;
+  animation: slide2 6s linear infinite;
+  -webkit-animation: slide2 5s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes slide2 {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+h4{
+  position: relative;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #fdf8e6;
+  text-transform: uppercase;
+}
+
+h4::before {
+  content: "SISTEMA DE RECADOS";
+  position: absolute;
+  color: #f4c21b;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.4rem solid #f4c21b;
+  animation: slide3 10s linear;
+  -webkit-animation: slide3 10s linear;
+  overflow: hidden;
+}
+
+@keyframes slide3 {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+
+
+.form-control{
+  background-color: #705a5a;
+  color:#ffff;
+  border:none;
+}
+
+
+.form-control:focus{
+  box-shadow: 0 0 0 0.20rem rgb(250, 204, 0) !important;
+}
+
+
+label {
+  display: flex;
+  flex: column;
+  font-size: 20px;
+  text-align: left;
+  align-items: left;
+  margin-left: 0;
+  align-items: left;
+  margin-left: 12px;
+  margin-top: 15px;
+  color: #f4c21b;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #f4c21b;
+}
+
+#formCadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+
+
+.divMeusRecados {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+
+}
+
+h2 {
+  color: #f4c21b;
+}
+
+table {
+  padding: 30px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+  color:#ffffff !important;
+}
+
+th,
+td {
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+table th {
+  color: #f4c21b;
+  background-color: #1c3002 !important;
+}
+
+tbody th {
+  opacity: 0.8;
+}
+
+
+#th1 {
+  width: 8%;
+}
+
+#th2 {
+  width: 20%;
+}
+
+#th4 {
+  width: 15%;
+}
+
+
+#msgError {
+  text-align: start center;
+  flex-direction: column;
+  color: #ff0000;
+  background-color: #2f2841;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess {
+  text-align: start center;
+  color: #00bb00;
+  background-color: #2f2841;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
