@@ -13,7 +13,7 @@ const confirmPassword = document.querySelector("#confirmPassword");
 const labelConfirmPassword = document.querySelector("#labelConfirmPassword");
 let validConfirmPassword = false;
 
-const msgError1 = document.querySelector("#msgError");
+const msgError1 = document.querySelector("#msgError1");
 const msgSuccess = document.querySelector("#msgSuccess");
 
 emailUser.addEventListener("keyup", () => {
@@ -88,7 +88,7 @@ function cadastrado(e) {
     msgSuccess.setAttribute("style", "display: block");
     msgSuccess.innerHTML = "<strong>Cadastrando usuário...</strong>";
     msgError1.innerHTML = "";
-    msgError1.setAtribute("style", "display: none");
+    msgError1.setAttribute("style", "display: none");
     setTimeout(() => {
       document.location.href = "./index.html";
     }, 1300);
