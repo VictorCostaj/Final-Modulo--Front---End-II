@@ -57,8 +57,8 @@ const preencherTabela = () => {
      <td> ${recado.lembrete}</td>
      <td> ${recado.detalhamento}</td>
      <td> 
-     <img src="./images/exxcluir.ico" alt="lixeira" class="imgs" onclick="apagarRecado(${recado.id})" data-bs-toggle="tooltip" data-bs-placement="top" title="Apagar" />
-     <img src="./images/editar.ico" alt="lixeira" class="imgs" onclick="editarRecado(${recado.id})" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar"/>
+     <img src="./assets/images/exxcluir.ico" alt="lixeira" class="imgs" onclick="apagarRecado(${recado.id})" data-bs-toggle="tooltip" data-bs-placement="top" title="Apagar" />
+     <img src="./assets/images/editar.ico" alt="lixeira" class="imgs" onclick="editarRecado(${recado.id})" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar"/>
      </td>
 </tr>
      `;

@@ -15,9 +15,9 @@
 
 <body class="bg-dark">
   <main class="container">
-    <section class=" img-fluid row d-flex justify-content-between">
+    <section class="row d-flex justify-content-between">
       <div class="col-sm-12 col-lg-5">
-        <img src="./assets/images/new-message-animate.svg" alt="imagem-celular-recados"></img>
+        <img class="img-fluid" src="./assets/images/new-message-animate.svg" alt="imagem-celular-recados"></img>
       </div>
       <div class="col-sm-12 col-lg-5 shadow-lg my-auto px-3 py-5 rounded">
         <div class="container">
@@ -31,7 +31,15 @@
 
           <form class="row g-3" id="form">
             <div class="col-xs-10">
-              <legend>Sistema de Recados</legend>
+              <div class="container-legend">
+                <div class="estatico">Sistema de</div>
+                <ul class="dinamico">
+                  <li><span>Recados</span></li>
+                  <li><span>Registre</span></li>
+                  <li><span>Atualize</span></li>
+                  <li><span>os</span></li>
+                </ul>
+              </div>
               <label for="validationEmail" class="form-label"> E-mail</label>
               <input id="user" type="email" class="form-control" placeholder="E-mail" required />
             </div>

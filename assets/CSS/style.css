@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
@@ -12,13 +11,65 @@ body {
   font-size: 18px;
 }
 
+.img-fluid {
+  height: 80%;
+}
 
+.container-legend {
+  display: inline-flex;
+}
 
+.container-legend .estatico {
+  color: #f4c21b;
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+.container-legend .dinamico {
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.dinamico li {
+  color:#9eeb56;
+  list-style: none;
+  font-size: 30px;
+  font-weight: 500;
+  left: 0;
+  position: relative;
+  top:0;
+  animation: slide 4s steps(4) infinite;
+}
+@keyframes silde{
+  100%{
+    top: -360px;
+  }
+}
+.dinamico li span::after{
+  content:"";
+  position:absolute;
+  width: 100%;
+  height: 100%; 
+  left:0;
+  border-left: 2px solid #9eeb56;
+  animation: typing 0.5s steps(3) infinite;
+  background: #212529;
+}
+.dinamico li span{
+  position: relative;
+}
+@keyframes typing{
+  100%{
+    left:100%;
+    margin: 0 -35px 0 35;
+  }
+}
 legend {
   position: relative;
   font-size: 2rem;
   font-family: "Noto Sans", Courier, monospace;
-  color: #fdf8e6;
+  color:#9eeb56;
   text-transform: uppercase;
 }
 
@@ -60,49 +111,19 @@ h3 {
   text-transform: uppercase;
 
 }
-
-
-
-h3::before {
-  content: "Criar Conta";
-  position: absolute;
-  color: #fdf8e6;
-  width: 10%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-right: 0.4rem solid #f4c21b;
-  animation: slide2 6s linear infinite;
-  -webkit-animation: slide2 5s linear infinite;
-  overflow: hidden;
-}
-
-@keyframes slide2 {
-  0% {
-    width: 0%;
-  }
-
-  50% {
-    width: 100%;
-  }
-
-  100% {
-    width: 0%;
-  }
-}
-
-h4{
+ 
+h4 {
   position: relative;
   font-size: 2rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #fdf8e6;
+  color:#9eeb56;
   text-transform: uppercase;
 }
 
 h4::before {
-  content: "SISTEMA DE RECADOS";
+  content: "Sistema ";
   position: absolute;
-  color: #f4c21b;
+  color:#9eeb56;
   width: 100%;
   position: absolute;
   top: 0;
@@ -129,14 +150,14 @@ h4::before {
 
 
 
-.form-control{
+.form-control {
   background-color: #705a5a;
-  color:#ffff;
-  border:none;
+  color: #ffff;
+  border: none;
 }
 
 
-.form-control:focus{
+.form-control:focus {
   box-shadow: 0 0 0 0.20rem rgb(250, 204, 0) !important;
 }
 
@@ -193,7 +214,7 @@ th,
 td {
   border: 1px solid #ffffff;
   border-collapse: collapse;
-  color:#ffffff !important;
+  color: #ffffff !important;
 }
 
 th,
