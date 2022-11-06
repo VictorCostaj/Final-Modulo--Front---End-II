@@ -12,7 +12,7 @@ body {
 }
 
 .img-fluid {
-  height: 80%;
+  margin-right: 55px;
 }
 
 .container-legend {
@@ -31,45 +31,51 @@ body {
   height: 50px;
   overflow: hidden;
 }
+
 .dinamico li {
-  color:#9eeb56;
+  color: #9eeb56;
   list-style: none;
   font-size: 30px;
   font-weight: 500;
   left: 0;
   position: relative;
-  top:0;
+  top: 0;
   animation: slide 4s steps(4) infinite;
 }
-@keyframes silde{
-  100%{
+
+@keyframes silde {
+  100% {
     top: -360px;
   }
 }
-.dinamico li span::after{
-  content:"";
-  position:absolute;
+
+.dinamico li span::after {
+  content: "";
+  position: absolute;
   width: 100%;
-  height: 100%; 
-  left:0;
+  height: 100%;
+  left: 0;
   border-left: 2px solid #9eeb56;
   animation: typing 0.5s steps(3) infinite;
   background: #212529;
 }
-.dinamico li span{
+
+.dinamico li span {
   position: relative;
 }
-@keyframes typing{
-  100%{
-    left:100%;
+
+@keyframes typing {
+  100% {
+    left: 100%;
     margin: 0 -35px 0 35;
   }
 }
+
 legend {
   position: relative;
   font-size: 2rem;
   font-family: "Noto Sans", Courier, monospace;
-  color:#9eeb56;
+  color: #9eeb56;
   text-transform: uppercase;
 }
 
@@ -111,19 +117,19 @@ h3 {
   text-transform: uppercase;
 
 }
- 
+
 h4 {
   position: relative;
   font-size: 2rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color:#9eeb56;
+  color: #9eeb56;
   text-transform: uppercase;
 }
 
 h4::before {
   content: "Sistema ";
   position: absolute;
-  color:#9eeb56;
+  color: #9eeb56;
   width: 100%;
   position: absolute;
   top: 0;
@@ -250,18 +256,20 @@ tbody th {
 #msgError {
   text-align: start center;
   flex-direction: column;
+  font-size: small;
   color: #ff0000;
   background-color: #2f2841;
-  padding: 10px;
+  margin-bottom: 25px;
   border-radius: 4px;
   display: none;
 }
 
 #msgSuccess {
   text-align: start center;
+  font-size: small;
   color: #00bb00;
   background-color: #2f2841;
-  padding: 10px;
+  padding-top: 10px;
   border-radius: 4px;
   display: none;
 }
